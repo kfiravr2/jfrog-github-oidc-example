@@ -12,7 +12,7 @@ jobs:
      env:
       OIDC_AUDIENCE: 'jfrog-github'
       OIDC_PROVIDER: 'github2'
-      PLATFORM_REPO: 'eks-npm'
+      PLATFORM_REPO: 'npm-virtual'
      defaults:
       run:
         working-directory: ./package
