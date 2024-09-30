@@ -58,4 +58,4 @@ jobs:
           jf rt build-publish
        - name: Scan Build
          run: |          
-          jf bs --watches "git-test" --fail=false
+          jf bs --vuln
