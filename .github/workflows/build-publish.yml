@@ -45,6 +45,8 @@ jobs:
          
        - name: Publish
          run: jf npm publish
+       - name: Scan
+         run: jf scan
          
        - name: Publish Build info With JFrog CLI
          run: |
@@ -54,6 +56,6 @@ jobs:
           jf rt build-add-git
           # Publish build info
           jf rt build-publish
-       - name: Scan Build
-         run: |          
-          jf bs --fail=true
+      # - name: Scan Build
+      #   run: |          
+      #    jf bs --fail=false
