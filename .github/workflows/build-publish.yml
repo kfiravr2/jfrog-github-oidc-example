@@ -46,7 +46,7 @@ jobs:
        - name: Publish
          run: jf npm publish
        - name: Scan
-         run: jf scan
+         run: jf audit
          
        - name: Publish Build info With JFrog CLI
          run: |
